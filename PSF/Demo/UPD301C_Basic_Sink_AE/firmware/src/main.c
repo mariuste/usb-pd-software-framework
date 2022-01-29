@@ -46,7 +46,7 @@ HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 #include "definitions.h"                // SYS function prototypes
 #include "psf_stdinc.h"                 // PSF include file
 #include "psf_control_terminal.h"
-#include "psf_adc.h"
+//#include "psf_adc.h"
 // *****************************************************************************
 // *****************************************************************************
 // Section: Main Entry Point
@@ -75,7 +75,7 @@ int main ( void )
         /* Maintain state machines of all polled MPLAB Harmony modules. */
         SYS_Tasks ( );
         /*ADC Run called*/
-        PSF_ADCRun();
+        //PSF_ADCRun();
         /*PCT  monitors during the debug trace*/
         MchpPSF_PCTRUN(ePCT_UNLOCK);
         /*PSF stack Run*/
